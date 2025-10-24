@@ -94,19 +94,19 @@ def createMessage(strong_against_them, weak_against_them):
     return "\n".join(result_list)
 
 def getMsgName(strong_against_them):
-    return f'<b>{strong_against_them['name']} - {strong_against_them['rank']}</b>'
+    return f'<b>{strong_against_them["name"]} - {strong_against_them["rank"]}</b>'
 
 def getMsgStrong(strong_against_them):
-    return f'<b>Strong - {", ".join(strong_against_them['strong']) if strong_against_them['strong'] else "None"}</b>'
+    return f'<b>Strong - {", ".join(strong_against_them["strong"]) if strong_against_them["strong"] else "None"}</b>'
 
 def getMsgGood(strong_against_them):
-    return f'<b><i>Good - {", ".join(strong_against_them['good']) if strong_against_them['good'] else "None"}</i></b>'
+    return f'<b><i>Good - {", ".join(strong_against_them["good"]) if strong_against_them["good"] else "None"}</i></b>'
 
 def getMsgBad(weak_against_them):
-    return f'<i>Bad - {", ".join(weak_against_them['bad']) if weak_against_them['bad'] else "None"}</i>'
+    return f'<i>Bad - {", ".join(weak_against_them["bad"]) if weak_against_them["bad"] else "None"}</i>'
 
 def getMsgWeak(weak_against_them):
-    return f'<i>Weak - {", ".join(weak_against_them['weak']) if weak_against_them['weak'] else "None"}</i>'
+    return f'<i>Weak - {", ".join(weak_against_them["weak"]) if weak_against_them["weak"] else "None"}</i>'
 
 
 # getMessage('/dva')
