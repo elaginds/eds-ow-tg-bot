@@ -18,26 +18,9 @@ def main(message):
     print('START')
     bot.send_message(message.chat.id, 'HELLO!')
 
-
-# dva - D.Va
-# doomfist - Doomfist
-# hazard - Hazard
-# queen - Junker Queen
-# mauga - Mauga
-# orisa - Orisa
-# ramattra - Ramattra
-# rein - Reinhardt
-# hog - Roadhog
-# sigma - Sigma
-# winston - Winston
-# ball - Wrecking Ball
-# zarya - Zarya
 @bot.message_handler(commands=['dva', 'doomfist', 'hazard', 'queen', 'mauga', 'orisa', 'ramattra', 'rein', 'hog', 'sigma', 'winston', 'ball', 'zarya'])
 def main(message):
-    print('NOW', message.text)
-
     msg = getMessage(message.text)
-    # msg = 'HI'
     bot.send_message(message.chat.id, msg, parse_mode='HTML')
 
 def getMessage(command):
@@ -100,7 +83,7 @@ def getWeakAgainstThem(tank_id):
     return result
 
 def createMessage(strong_against_them, weak_against_them):
-    result_list = [getMsgName(strong_against_them['name']),
+    result_list = [getMsgName(strong_against_them),
                    getMsgStrong(strong_against_them),
                    getMsgGood(strong_against_them),
                    getMsgBad(weak_against_them),
@@ -110,8 +93,8 @@ def createMessage(strong_against_them, weak_against_them):
 
     return "\n".join(result_list)
 
-def getMsgName(name):
-    return f'<b>{name}</b>'
+def getMsgName(strong_against_them):
+    return f'<b>{strong_against_them['name']} - {strong_against_them['rank']}</b>'
 
 def getMsgStrong(strong_against_them):
     return f'<b>Strong - {", ".join(strong_against_them['strong']) if strong_against_them['strong'] else "None"}</b>'

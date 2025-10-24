@@ -11,70 +11,70 @@
   "command": "/doomfist",
   "strong": [],
   "good": [],
-  "rank": "S"
+  "rank": "A"
 }, {
   "id": 3,
   "name": "Hazard",
   "command": "/hazard",
   "strong": [],
   "good": [],
-  "rank": "S"
+  "rank": "A"
 }, {
   "id": 4,
   "name": "Junker Queen",
   "command": "/queen",
   "strong": [],
   "good": [11, 7, 6],
-  "rank": "S"
+  "rank": "B"
 }, {
   "id": 5,
   "name": "Mauga",
   "command": "/mauga",
   "strong": [],
   "good": [],
-  "rank": "S"
+  "rank": "B"
 }, {
   "id": 6,
   "name": "Orisa",
   "command": "/orisa",
   "strong": [7, 8],
   "good": [2],
-  "rank": "S"
+  "rank": "A"
 }, {
   "id": 7,
   "name": "Ramattra",
   "command": "/ramattra",
   "strong": [],
   "good": [],
-  "rank": "S"
+  "rank": "C"
 }, {
   "id": 8,
   "name": "Reinhardt",
   "command": "/rein",
   "strong": [4],
   "good": [2, 13],
-  "rank": "S"
+  "rank": "C"
 }, {
   "id": 9,
   "name": "Roadhog",
   "command": "/hog",
   "strong": [2, 11],
   "good": [1, 5, 7],
-  "rank": "S"
+  "rank": "C"
 }, {
   "id": 10,
   "name": "Sigma",
   "command": "/sigma",
   "strong": [5],
   "good": [1, 6, 4],
-  "rank": "S"
+  "rank": "B"
 }, {
   "id": 11,
   "name": "Winston",
   "command": "/winston",
   "strong": [13],
   "good": [8],
-  "rank": "S"
+  "rank": "B"
 }, {
   "id": 12,
   "name": "Wrecking Ball",
